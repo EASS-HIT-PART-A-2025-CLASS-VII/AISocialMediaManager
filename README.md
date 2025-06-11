@@ -4,12 +4,18 @@ A powerful AI-powered application that generates engaging social media captions 
 
 ## Features
 
-- 🖼️ **Image Upload**: Support for JPG, PNG, GIF formats
-- 🤖 **AI-Powered**: Uses BLIP for image understanding and GPT-2 for text generation
-- 🎨 **Multiple Formats**: Casual, Formal, Funny, Trendy, Professional, Inspirational
-- 📱 **Responsive UI**: Beautiful Streamlit interface
-- 🐳 **Docker Ready**: Easy deployment with Docker
-- 📊 **Caption Analytics**: Character count, word count, hashtag analysis
+### **AI Caption Generation**
+- 🖼️ **Smart Image Analysis**: Upload JPG, PNG, GIF formats
+- 🤖 **AI-Powered Captions**: Uses advanced AI models for content understanding
+- 🎨 **6 Caption Styles**: Casual, Formal, Funny, Trendy, Professional, Inspirational
+- 📋 **Auto-Copy**: Optional automatic clipboard copying
+- 🔄 **Regenerate**: Get multiple caption variations
+
+### **Instagram Preview & Management**
+- 📱 **Instagram-Like Interface**: Authentic social media preview
+- 🎯 **Dual View Modes**: Grid view and Feed view
+- 🔄 **Drag & Drop**: Reorder posts to plan your content sequence
+- 💾 **Save Posts**: Store generated content for later use
 
 ## Tech Stack
 
@@ -54,19 +60,25 @@ pip install -r requirements.txt
 streamlit run frontend/app.py
 ```
 
-## Usage
+## 🎯 How to Use
 
-1. **Upload Image**: Click "Choose an image file" and select your photo
-2. **Select Format**: Choose from 6 different caption styles:
-   - **Casual**: Friendly and relaxed tone
-   - **Formal**: Professional and polished
-   - **Funny**: Humorous and entertaining
-   - **Trendy**: Hip and contemporary
-   - **Professional**: Business-focused content
-   - **Inspirational**: Motivating and uplifting
+### **1. Generate Captions**
+- Upload an image using drag-and-drop or file picker
+- Choose your preferred caption style
+- Enable auto-copy if desired
+- Click "Generate Caption" to create AI-powered content
 
-3. **Generate Caption**: Click "Generate Caption" to create AI-powered content
-4. **Copy & Share**: Use the generated caption on your social media platforms
+### **2. Save & Organize**
+- Save generated posts to your preview collection
+- Switch to "Preview" tab to see your Instagram-like feed
+- Drag and drop posts to reorder them
+- Switch between Grid and Feed views
+
+### **3. Plan Your Content**
+- Use Grid view to see your overall feed aesthetic
+- Use Feed view to see individual post details
+- Copy captions directly from the preview
+- Delete posts you don't want to keep
 
 ## API Endpoints
 
@@ -97,37 +109,3 @@ The application includes:
 - **Dockerfile**: Multi-stage build for optimized image size
 - **docker-compose.yml**: Easy orchestration with volume mounts
 - **Requirements**: All dependencies specified in requirements.txt
-
-## Performance
-
-- **GPU Support**: Automatically detects and uses CUDA if available
-- **Model Caching**: Models are cached locally to improve startup time
-- **Batch Processing**: Optimized for handling multiple requests
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
-
-## Support
-
-For issues and questions:
-1. Check the GitHub issues page
-2. Create a new issue with detailed description
-3. Include error logs and system information
-
-## Roadmap
-
-- [ ] Support for more image formats
-- [ ] Additional AI models integration
-- [ ] Batch processing for multiple images
-- [ ] Social media platform-specific optimization
-- [ ] Custom format creation
-- [ ] Multi-language support
