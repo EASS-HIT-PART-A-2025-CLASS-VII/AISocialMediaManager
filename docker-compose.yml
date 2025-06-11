@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  ai-caption-generator:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./uploads:/app/uploads
+    environment:
+      - PYTHONPATH=/app
+      - HUGGINGFACE_HUB_CACHE=/app/cache
+    restart: unless-stopped
